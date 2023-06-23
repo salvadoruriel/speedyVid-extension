@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+	"version": "1.0",
+	"name": "speedyVid extension - HTML5 Video speedup",
+	"description": "Control HTML5 video speed while keeping your privacy.",
+	"permissions": [
+		"activeTab"
+	],
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"content.js"
+			],
+			"all_frames": true
+		}
+	],
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Video Speed Controller"
+	}
+}
