@@ -9,9 +9,9 @@ _TODO:_
 # Installation/Usage
 - **Download** the [zip of this project](https://github.com/salvadoruriel/speedyVid-extension/archive/refs/heads/main.zip)
 - Unzip it. _(& always scan downloaded files before using them via [virustotal](https://www.virustotal.com/gui/home/upload))_
-- In the extensions page of your chromium browser **enable Developer mode**.
-- Click _Load unpacked_, browse to the unzipped folder & select it.
-**That's it! Enjoy!**
+- In the extensions page of your chromium browser **enable Developer mode**.  
+- Click _Load unpacked_, browse to the unzipped folder & select it.  
+**That's it! Enjoy!**  
 _(Pin the extension if you aren't seeing it)._
 
 # License
