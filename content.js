@@ -1,7 +1,6 @@
 //reads events
-
 chrome.runtime.onMessage.addListener(
-	function (request, sender, sendResponse) {
+	(request, sender, sendResponse) => {
 		//setSpeed
 		if (request.action === "setSpeed") {
 			let videoElements = Array.from(document.getElementsByTagName('video'));
@@ -26,7 +25,6 @@ chrome.runtime.onMessage.addListener(
 				}
 				speedIndicator.textContent = request.speed.toFixed(2);
 			});
-		}
-		//...
+		} 
 	}
 );
