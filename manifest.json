@@ -1,9 +1,10 @@
 {
 	"manifest_version": 3,
-	"version": "1.0",
+	"version": "1.1",
 	"name": "speedyVid - speed up videos",
 	"description": "Control HTML5 video speed without shady side effects.",
 	"permissions": [
+		"storage",
 		"activeTab",
 		"tabs"
 	],

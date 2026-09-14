@@ -4,7 +4,6 @@ A simple chromium/chrome extension to increase the speed of videos without shady
 
 _TODO:_ 
 - Rebuild popup (_& project_) in React. _For a more beautiful interface_
-- Store speed. As any time the popup is re-opened the current speed is reset to the default.
 
 # Installation/Usage
 - **Download** the [zip of this project](https://github.com/salvadoruriel/speedyVid-extension/archive/refs/heads/main.zip)
