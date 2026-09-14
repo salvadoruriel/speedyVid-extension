@@ -4,15 +4,15 @@ const INTERVAL_MS = 1000;
 let cachedSpeed = 1.0;
 (async () => {
   try {
-		const result = await chrome.storage.local.get(KEY);
-		cachedSpeed = result[KEY] ?? 1.0;
+		const res = await chrome.storage.local.get(KEY);
+		cachedSpeed = res[KEY] ?? 1.0;
 		//console.info("[spyvi] Loaded cache")
   } catch (err) {
     console.error('[spyvi] Interval: Storage read failed:', err);
   }
 })();
 
-//read speed changes on storage, could replace event listener but not for now
+//read speed changes in storage, could replace event listener but not for now
 chrome.storage.onChanged.addListener((changes, areaName) => {
   if (areaName === 'local' && changes[KEY]) {
     cachedSpeed = changes[KEY].newValue ?? 1.0;
